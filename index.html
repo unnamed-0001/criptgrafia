@@ -11,47 +11,45 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            background-color: black;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;       /* Centra todo horizontalmente */
+            justify-content: center;
+            align-items: center;
+            background-color: black;        
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .central-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 90%;
+            padding: 20px;
         }
 
         .text-container {
-            width: 80%;
+            width: 100%;
             padding: 20px;
-            margin-top: 40px;
             background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
         }
 
-        .image-box {
-            margin: 40px auto;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            width: fit-content;      /* Tamaño justo */
-            max-width: 80%;
-            display: flex;
-            justify-content: center; /* Centra la imagen dentro del recuadro */
-        }
-
         img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+            width: 500px;
+            height: 400px;
         }
     </style>
 </head>
 <body>
-
-    <div class="text-container">
-        <p>Hello, if you are reading this, it means you have already taken the first step toward a secret that few will ever find, this challenge is for highly skilled individuals, we eagerly await the few who make it to the end. The first clue is hidden inside this image.</p>
+    <div class="central-content">
+        <img src="photo.png">
+        <div class="text-container">
+            <p>Hello, if you are reading this, it means you have already taken the first step toward a secret that few will ever find, this challenge is for highly skilled individuals, we eagerly await the few who make it to the end. The first clue is hidden inside this image.</p>
+        </div>
     </div>
-
-    <div class="image-box">
-        <img src="photo.png" alt="Secret Image">
-    </div>
-
 </body>
 </html>
