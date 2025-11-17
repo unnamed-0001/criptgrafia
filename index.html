@@ -11,51 +11,47 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            height: 100vh;
+            background-color: black;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            background-image: url('photo.png'); /* Reemplaza con la ruta de tu imagen */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            align-items: center;       /* Centra todo horizontalmente */
         }
 
         .text-container {
             width: 80%;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
         }
 
-        .top-text {
-            margin-top: 50px; /* Ajusta el margen superior si es necesario */
-        }
-
-        .center-text {
-            flex-grow: 1; /* Permite que este contenedor ocupe el espacio restante */
+        .image-box {
+            margin: 40px auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: fit-content;      /* Tamaño justo */
+            max-width: 80%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            justify-content: center; /* Centra la imagen dentro del recuadro */
         }
 
-        .bottom-text {
-            margin-bottom: 50px; /* Ajusta el margen inferior si es necesario */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="text-container top-text">
+
+    <div class="text-container">
         <p>Hello, if you are reading this, it means you have already taken the first step toward a secret that few will ever find, this challenge is for highly skilled individuals, we eagerly await the few who make it to the end. The first clue is hidden inside this image.</p>
     </div>
 
-    <div class="text-container center-text">
-        <p>Hello, if you are reading this, it means you have already taken the first step toward a secret that few will ever find, this challenge is for highly skilled individuals, we eagerly await the few who make it to the end. The first clue is hidden inside this image.</p>
+    <div class="image-box">
+        <img src="photo.png" alt="Secret Image">
     </div>
 
-    <div class="text-container bottom-text">
-        <p>Hello, if you are reading this, it means you have already taken the first step toward a secret that few will ever find, this challenge is for highly skilled individuals, we eagerly await the few who make it to the end. The first clue is hidden inside this image. </p>
-    </div>
 </body>
 </html>
